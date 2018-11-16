@@ -1,5 +1,5 @@
 # Annotated Events
-This API is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTheWorld/JDA/blob/master/src/main/java/net/dv8tion/jda/core/hooks/AnnotatedEventManager.java) so you can use the EventManager without JDA dependencies and without relation to discord
+This API is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTheWorld/JDA/blob/master/src/main/java/net/dv8tion/jda/core/hooks/AnnotatedEventManager.java) so you can use the EventManager without JDA dependencies and without relation to Discord.
 
 # How to use?
 
@@ -11,6 +11,7 @@ public class YourEvent implements Event {
     private final yourVar...;
 }
 ```
+
 
 `EventListener.java`
 ```java
@@ -27,6 +28,8 @@ public class EventListener {
 
 ```
 
+
+`The class or method where you wanto to initialize the EventManager`
 ```java
 
 // Optionally you can pass an own ExecutorService
