@@ -1,6 +1,40 @@
 # Annotated Events
 This API is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTheWorld/JDA/blob/master/src/main/java/net/dv8tion/jda/core/hooks/AnnotatedEventManager.java) so you can use the EventManager without JDA dependencies and without relation to Discord.
 
+[![](https://jitpack.io/v/ForYaSee/EventSystem.svg)](https://jitpack.io/#ForYaSee/EventSystem)
+
+# Download
+
+**Maven**
+```xml
+<repositories>
+    <repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+```xml
+<dependency>
+    <groupId>com.github.ForYaSee</groupId>
+    <artifactId>EventSystem</artifactId>
+	<version>v1.0.0</version>
+</dependency>
+```
+
+**Gradle**
+```gradle
+repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.ForYaSee:EventSystem:v1.0.0'
+}
+
+```
+
 # How to use?
 
 `YourEvent.java`
