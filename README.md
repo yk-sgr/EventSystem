@@ -66,7 +66,7 @@ public class EventListener {
 `The class or method where you wanto to initialize the EventManager`
 ```java
 
-// Optionally you can pass an own ExecutorService
+// Optionally you can pass your own ExecutorService
 EventManager eventManager = new EventManager();
 
 // Register your event listener
