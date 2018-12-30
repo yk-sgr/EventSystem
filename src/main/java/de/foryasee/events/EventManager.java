@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
-public class EventManager {
+public class EventManager implements IEventManager {
 
     private final ExecutorService executorService;
     private final Set<Object> listeners = new HashSet<>();
@@ -24,22 +24,24 @@ public class EventManager {
         this(Executors.newCachedThreadPool());
     }
 
-    public void registerListener(Object eventListener) {
+    public void register(Object eventListener) {
         if (listeners.add(eventListener))
             updateMethods();
     }
 
     public void register(Object... eventListeners) {
-        Arrays.asList(eventListeners).forEach(this::registerListener);
+        if (listeners.addAll(Arrays.asList(eventListeners)))
+            updateMethods();
     }
 
-    public void unregisterListener(Object eventListener) {
+    public void unregister(Object eventListener) {
         if (listeners.remove(eventListener))
             updateMethods();
     }
 
     public void unregister(Object... eventListeners) {
-        Arrays.asList(eventListeners).forEach(this::unregisterListener);
+        if (listeners.removeAll(Arrays.asList(eventListeners)))
+            updateMethods();
     }
 
     public List<Object> getListeners() {
