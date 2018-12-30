@@ -3,6 +3,8 @@ This API is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTh
 
 [![](https://jitpack.io/v/ForYaSee/EventSystem.svg)](https://jitpack.io/#ForYaSee/EventSystem)
 
+*Updating from 1.0.0 to 1.1.0 might break your code*
+
 # Download
 
 **Maven**
@@ -18,7 +20,7 @@ This API is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTh
 <dependency>
     <groupId>com.github.ForYaSee</groupId>
     <artifactId>EventSystem</artifactId>
-	<version>v1.0.0</version>
+	<version>1.1.0</version>
 </dependency>
 ```
 
