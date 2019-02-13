@@ -1,5 +1,5 @@
 # Annotated Events
-This is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTheWorld/JDA/blob/master/src/main/java/net/dv8tion/jda/core/hooks/AnnotatedEventManager.java) so you can use the EventManager without JDA dependencies and without relation to Discord.
+This is a port of [JDA's AnnotatedEventManager](https://github.com/DV8FromTheWorld/JDA/blob/master/src/main/java/net/dv8tion/jda/core/hooks/AnnotatedEventManager.java) so you can use the EventManager without any dependencies.
 
 [![](https://jitpack.io/v/ForYaSee/EventSystem.svg)](https://jitpack.io/#ForYaSee/EventSystem)
 
